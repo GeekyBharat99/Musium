@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1057993948109",
+    "project_id": "musium",
+    "storage_bucket": "musium.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057993948109:android:085213e25b2c8f3c9d2284",
+        "android_client_info": {
+          "package_name": "com.BharatTiwari.musium"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057993948109-fstqj47sv6qgclaq4hn1aa9r19h2rqqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuTvr2kFgydM5QInS96fHMrOJAGgDr14s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057993948109-fstqj47sv6qgclaq4hn1aa9r19h2rqqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
