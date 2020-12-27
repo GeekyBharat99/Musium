@@ -13,14 +13,14 @@ String kUrl = "",
     lyrics,
     has_320,
     rawkUrl;
-String key = "38346591";
+String key = "YOUR-KEY";
 String decrypt = "";
 
 Future<List> fetchSongsList(searchQuery) async {
   String searchUrl =
-      "https://www.jiosaavn.com/api.php?app_version=5.18.3&api_version=4&readable_version=5.18.3&v=79&_format=json&query=" +
+      "YOUR-OWN-API=" +
           searchQuery +
-          "&__call=autocomplete.get";
+          "YOUR-OWN-API";
   var res = await http.get(searchUrl, headers: {"Accept": "application/json"});
   var resEdited = (res.body).split("-->");
   var getMain = json.decode(resEdited[1]);
@@ -45,7 +45,7 @@ Future<List> fetchSongsList(searchQuery) async {
 
 Future<List> topSongs() async {
   String topSongsUrl =
-      "https://www.jiosaavn.com/api.php?__call=webapi.get&token=8MT-LQlP35c_&type=playlist&p=1&n=21&includeMetaTags=0&ctx=web6dot0&api_version=4&_format=json&_marker=0";
+      "YOUR-OWN-API";
   var songsListJSON =
       await http.get(topSongsUrl, headers: {"Accept": "application/json"});
   var songsList = json.decode(songsListJSON.body);
@@ -70,7 +70,7 @@ Future<List> topSongs() async {
 
 Future fetchSongDetails(songId) async {
   String songUrl =
-      "https://www.jiosaavn.com/api.php?app_version=5.18.3&api_version=4&readable_version=5.18.3&v=79&_format=json&__call=song.getDetails&pids=" +
+      "YOUR-OWN-API" +
           songId;
   var res = await http.get(songUrl, headers: {"Accept": "application/json"});
   var resEdited = (res.body).split("-->");
@@ -98,9 +98,9 @@ Future fetchSongDetails(songId) async {
 
   if (getMain[songId]["more_info"]["has_lyrics"] == "true") {
     String lyricsUrl =
-        "https://www.jiosaavn.com/api.php?__call=lyrics.getLyrics&lyrics_id=" +
+        "YOUR-OWN-API=" +
             songId +
-            "&ctx=web6dot0&api_version=4&_format=json";
+            "YOUR-OWN-API";
     var lyricsRes =
         await http.get(lyricsUrl, headers: {"Accept": "application/json"});
     var lyricsEdited = (lyricsRes.body).split("-->");
@@ -109,7 +109,7 @@ Future fetchSongDetails(songId) async {
   } else {
     lyrics = "null";
     String lyricsApiUrl =
-        "https://musifydev.vercel.app/lyrics/" + artist + "/" + title;
+        "YOUR-OWN-API" + artist + "/" + title;
     var lyricsApiRes =
         await http.get(lyricsApiUrl, headers: {"Accept": "application/json"});
     var lyricsResponse = json.decode(lyricsApiRes.body);
