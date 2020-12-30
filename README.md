@@ -1,17 +1,3 @@
 # musium
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Musium
+# It is a Complete Music App. it has all Features Which a standard Music app should have. It can Play Your Local/Downloaded Songs as well as it can play Online any songs that you want with Lyrics and you can Download Them Too. when The song is Downloaded it will be listed in your Downloaded Songs Collection. so that you can play it offline as well. It has a Awesome Dark UI.
