@@ -36,17 +36,17 @@ dependencies:
   path_provider: ^1.6.24
   progress_dialog: ^1.2.4
   material_design_icons_flutter: ^4.0.5755
-  url_launcher: ^5.7.10
+  url_launcher: ^6.0.12
   permission_handler: ^5.0.1+1
   fluttertoast: ^7.1.5
   cached_network_image: ^2.4.1
   google_fonts: ^1.1.1
   share: ^0.6.5+4
-  contactus: ^1.1.7
+  contactus: ^1.2.0
   flutter_audio_query: ^0.3.5+6
   audio_manager: ^0.6.2
-  connectivity: ^2.0.2
-  flutter_automation: ^1.4.0
+  connectivity_plus: ^1.2.0
+  flutter_automation: ^2.0.0
   admob_flutter: ^1.0.1
 
 dev_dependencies:
